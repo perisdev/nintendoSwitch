@@ -1,0 +1,117 @@
+:root {
+  --leftColor: #01c8eb;
+  --rightColor: #ff6054;
+  --screenColor: #131211;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CONSOLA */
+
+.consola {
+  display: flex;
+  width: 800px;
+  height: 350px;
+}
+
+/* .left, .screen, .right {
+  height: 400px;
+  max-height: 350px;
+} */
+
+/* LEFT */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  background: var(--leftColor);
+  width: 15%;
+  border-radius: 70px 0px 0px 70px;
+}
+
+.bt {
+  border: 1px solid #000;
+}
+
+.minus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 15%;
+}
+
+.bt_minus {
+  width: 25px;
+  height: 6px;
+  background: #000;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.joystick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+}
+
+.arrows {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 30%;
+}
+
+.fr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+
+}
+
+.fr_middle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset {
+  display: flex;
+  justify-content: flex-end;
+  height: 30%;
+}
+
+.bt_reset {
+  margin-right: 30px;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* SCREEN */
+
+.screen {
+  background: var(--screenColor);
+  width: 70%;
+}
+
+/* RIGHT */
+
+.right {
+  background: var(--rightColor);
+  width: 15%;
+  border-radius: 0px 70px 70px 0px;
+}
