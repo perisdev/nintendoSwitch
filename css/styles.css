@@ -53,7 +53,7 @@ body {
 }
 
 .bt_minus {
-  width: 25px;
+  width: 20px;
   height: 6px;
   background: #000;
   border-radius: 3px;
@@ -77,8 +77,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000;
-
 }
 
 .fr_middle {
@@ -114,4 +112,34 @@ body {
   background: var(--rightColor);
   width: 15%;
   border-radius: 0px 70px 70px 0px;
+}
+
+.plus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 15%;
+}
+
+.bt_plus {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  /* background: #000;
+  border-radius: 3px; */
+}
+
+.reset2 {
+  display: flex;
+  justify-content: flex-start;
+  height: 30%;
+}
+
+.bt_reset2 {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border-radius: 50%;
 }
