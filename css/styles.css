@@ -20,9 +20,29 @@ body {
   height: 100vh;
 }
 
-/* CONSOLA */
+/* DETAILS */
 
-.consola {
+main {
+  display: grid;
+  grid-template-rows: 4px 350px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 802px;
+}
+
+.dt_button {
+  width: 89px;
+  height: 52px;
+}
+
+/* CONSOLE */
+
+.console {
+  justify-self: center;
+
   display: flex;
   width: 800px;
   height: 350px;
