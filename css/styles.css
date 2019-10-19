@@ -1,7 +1,9 @@
 :root {
   --leftColor: #01c8eb;
   --rightColor: #ff6054;
-  --screenColor: #131211;
+  --screenColor: #1a1c20;
+  --screenMarco1: #1f2c2f;
+  --screenMarco2: #000;
 }
 
 * {
@@ -26,12 +28,7 @@ body {
   height: 350px;
 }
 
-/* .left, .screen, .right {
-  height: 400px;
-  max-height: 350px;
-} */
-
-/* LEFT */
+/* LEFT - SECTION */
 
 .left {
   display: flex;
@@ -41,20 +38,16 @@ body {
   border-radius: 70px 0px 0px 70px;
 }
 
-.bt {
-  border: 1px solid #000;
-}
-
 .minus {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
-  height: 15%;
+  height: 10%;
 }
 
 .bt_minus {
   width: 20px;
-  height: 6px;
+  height: 7px;
   background: #000;
   border-radius: 3px;
   margin-right: 10px;
@@ -64,19 +57,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25%;
+  height: 32%;
+}
+
+.bt_joystick {
+  height: 58px;
 }
 
 .arrows {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  height: 30%;
+  height: 25%;
 }
 
 .fr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.bt_cross {
+  height: 30px;
 }
 
 .fr_middle {
@@ -87,26 +88,46 @@ body {
 .reset {
   display: flex;
   justify-content: flex-end;
-  height: 30%;
+  height: 33%;
 }
 
 .bt_reset {
   margin-right: 30px;
-  margin-top: 10px;
-  width: 20px;
-  height: 20px;
-  background: #000;
-  border-radius: 2px;
+  margin-top: 18px;
+  width: 23px;
+  height: 23px;
 }
 
-/* SCREEN */
+/* SCREEN - SECTION */
 
-.screen {
-  background: var(--screenColor);
+.screenFrame1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--screenMarco1);
   width: 70%;
 }
 
-/* RIGHT */
+.screenFrame2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--screenMarco2);
+  width: 93%;
+  height: 94%;
+  border-radius: 10px;
+}
+
+.screen {
+  background: var(--screenColor);
+  width: 84%;
+  height: 85%;
+}
+
+
+/* RIGHT - SECTION */
 
 .right {
   background: var(--rightColor);
@@ -116,23 +137,27 @@ body {
 
 .plus {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
-  height: 15%;
+  height: 12%;
 }
 
 .bt_plus {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   margin-left: 10px;
-  /* background: #000;
-  border-radius: 3px; */
+}
+
+.arrows2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 25%;
 }
 
 .reset2 {
   display: flex;
   justify-content: flex-start;
-  height: 30%;
+  height: 31%;
 }
 
 .bt_reset2 {
@@ -140,6 +165,4 @@ body {
   margin-top: 10px;
   width: 25px;
   height: 25px;
-  background: #000;
-  border-radius: 50%;
 }
