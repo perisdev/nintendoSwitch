@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+
 :root {
-  --leftColor: #01c8eb;
+  --leftColor: #00c0e1;
   --rightColor: #ff6054;
   --screenColor: #1a1c20;
   --screenMarco1: #1f2c2f;
@@ -18,13 +21,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
 }
 
-/* DETAILS */
+/* EXTERNAL DETAILS */
 
 main {
   display: grid;
-  grid-template-rows: 4px 350px;
+  grid-template-rows: 4px 350px 100px;
 }
 
 .details {
@@ -38,11 +45,10 @@ main {
   height: 52px;
 }
 
-/* CONSOLE */
+/* CONSOLE - SECTION */
 
 .console {
   justify-self: center;
-
   display: flex;
   width: 800px;
   height: 350px;
@@ -56,6 +62,7 @@ main {
   background: var(--leftColor);
   width: 15%;
   border-radius: 70px 0px 0px 70px;
+  box-shadow: 5px 5px 15px #b4ecf5 inset, 2px -2px 30px #02a5c2 inset, 2px 2px 2px #666;
 }
 
 .minus {
@@ -121,19 +128,40 @@ main {
 /* SCREEN - SECTION */
 
 .screenFrame1 {
-  display: flex;
+  display: grid;
+  grid-template-rows: 0px 1fr;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-
   background: var(--screenMarco1);
   width: 70%;
+  box-shadow: 0px 2px 2px #666;
+}
+
+.dt_frame1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 0px solid white;
+}
+
+.gap1, .gap2 {
+  width: 14px;
+  height: 27px;
+  background: #fff;
+}
+
+.gap1 {
+  border-radius: 0 0 90% 0;
+}
+
+.gap2 {
+  border-radius: 0 0 0 90%;
 }
 
 .screenFrame2 {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: var(--screenMarco2);
   width: 93%;
   height: 94%;
@@ -144,8 +172,15 @@ main {
   background: var(--screenColor);
   width: 84%;
   height: 85%;
+  border-radius: 1px;
 }
 
+.screen:hover {
+  background-image: url('https://media.giphy.com/media/vu1dkYbukWyRO/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: crosshair;
+}
 
 /* RIGHT - SECTION */
 
@@ -153,6 +188,7 @@ main {
   background: var(--rightColor);
   width: 15%;
   border-radius: 0px 70px 70px 0px;
+  box-shadow: -5px 10px 15px #fc9a93 inset, 0px 2px 2px #666;
 }
 
 .plus {
@@ -185,4 +221,9 @@ main {
   margin-top: 10px;
   width: 25px;
   height: 25px;
+}
+
+p {
+  align-self: center;
+  text-align: center;
 }
